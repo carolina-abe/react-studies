@@ -6,6 +6,10 @@ import { Greetings } from './components/Greetings'
 import { LoginButton } from './components/LoginButton'
 import { UserForm } from './components/UserForm'
 import { Welcome } from './components/Welcome'
+import { Warning } from './components/Warning'
+import { NumberList } from './components/NumberList'
+import { StyledButton } from './components/StyledButton'
+import { TaskList } from './components/TaskList'
 
 function App() {
   return (
@@ -18,6 +22,10 @@ function App() {
       <Form />
       <ConditionalRender user='Jane Doe' />
       <LoginButton logged={false} />
+      <Warning  warning={null} />
+      <NumberList numbers={[1, 2, 3, 4, 5]} />
+      <StyledButton />
+      <TaskList tasks={[{id: 1, text: 'Task 1'}, {id: 2, text: 'Task 2'}, {id: 3, text: 'Task 3'}]} />
     </>
   )
 }

@@ -9,6 +9,7 @@ export const Counter = () => {
     <p>
       You have been clicked {count} times
     </p>
-    <button onClick={() => setCount( count + 1 )}>Click</button>
+    <button onClick={() => setCount( count + 1 )}>Increment</button>
+    <button onClick={() => setCount( count - 1 )}>Decrement</button>
   </div>
 }
