@@ -10,6 +10,7 @@ import { Warning } from './components/Warning'
 import { NumberList } from './components/NumberList'
 import { StyledButton } from './components/StyledButton'
 import { TaskList } from './components/TaskList'
+import { Timer } from './components/Timer'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <NumberList numbers={[1, 2, 3, 4, 5]} />
       <StyledButton />
       <TaskList tasks={[{id: 1, text: 'Task 1'}, {id: 2, text: 'Task 2'}, {id: 3, text: 'Task 3'}]} />
+      <Timer />
     </>
   )
 }
