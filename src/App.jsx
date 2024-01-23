@@ -14,6 +14,8 @@ import { Timer } from './components/Timer'
 import { MyContextProvider } from './contexts/MyContext'
 import { ConsumeContext } from './components/ConsumeContext'
 import { ChangesValuesWithContext } from './components/ChangesValuesWithContext'
+import { CounterWithReducer } from './components/CounterWithReducer'
+import { Container } from './components/Container'
 
 function App() {
   return (
@@ -36,6 +38,12 @@ function App() {
         <ConsumeContext />
         <ChangesValuesWithContext />
       </MyContextProvider>
+      <CounterWithReducer />
+      {/* Slot & children props */}
+      <Container>
+        <h3>This is a title</h3>
+        <p>This is a simple text</p>
+      </Container>
     </>
   )
 }
