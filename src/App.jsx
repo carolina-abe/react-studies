@@ -11,6 +11,9 @@ import { NumberList } from './components/NumberList'
 import { StyledButton } from './components/StyledButton'
 import { TaskList } from './components/TaskList'
 import { Timer } from './components/Timer'
+import { MyContextProvider } from './contexts/MyContext'
+import { ConsumeContext } from './components/ConsumeContext'
+import { ChangesValuesWithContext } from './components/ChangesValuesWithContext'
 
 function App() {
   return (
@@ -28,6 +31,11 @@ function App() {
       <StyledButton />
       <TaskList tasks={[{id: 1, text: 'Task 1'}, {id: 2, text: 'Task 2'}, {id: 3, text: 'Task 3'}]} />
       <Timer />
+      {/* pass the provider to component to access the props*/}
+      <MyContextProvider>
+        <ConsumeContext />
+        <ChangesValuesWithContext />
+      </MyContextProvider>
     </>
   )
 }
