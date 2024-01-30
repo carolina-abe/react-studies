@@ -16,6 +16,10 @@ import { ConsumeContext } from './components/ConsumeContext'
 import { ChangesValuesWithContext } from './components/ChangesValuesWithContext'
 import { CounterWithReducer } from './components/CounterWithReducer'
 import { Container } from './components/Container'
+import { DisplayWindowSize } from './components/DisplayWindowSize'
+import { UserProfile } from './components/UserProfile'
+import { Calculate } from './components/Calculate'
+import { CountCallback } from './components/CountCallback'
 
 function App() {
   return (
@@ -44,6 +48,10 @@ function App() {
         <h3>This is a title</h3>
         <p>This is a simple text</p>
       </Container>
+      <DisplayWindowSize />
+      <UserProfile userId={1}/>
+      <Calculate number={5}/>
+      <CountCallback />
     </>
   )
 }
